@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "timestamp": "2025-10-10_23-29-58",
+    "script_version": "2.0_multi_bias",
+    "simulation_mode": "SCF+NEGF",
+    "smoke_test": true
+  },
+  "system_parameters": {
+    "width_W": 6.0,
+    "length_L": 8.0,
+    "fermi_energy_eV": -0.0018500000000000044,
+    "temperature_K": 300.0,
+    "hopping_t_eV": 2.7,
+    "magnetic_field": {
+      "Bx": 0.0,
+      "By": 0.0,
+      "Bz": 0.1
+    },
+    "gate_voltage_g": 3.939877
+  },
+  "sw_defect_parameters": {
+    "eps_sw": 0.04815,
+    "alpha1_sw": 0.01,
+    "alpha2_sw": -0.05,
+    "impurity_V_eta2": 0.671015,
+    "impurity_V_side": 0.2
+  },
+  "sw_system": {
+    "field_sweep": {
+      "fields_X": [
+        -0.02,
+        0.0,
+        0.02
+      ],
+      "conductances_S": [
+        4.874489123171033e-06,
+        4.874972626597435e-06,
+        4.8753790908607245e-06
+      ],
+      "transmissions": [
+        0.6398246778533438,
+        0.6398441471440365,
+        0.6398897644528991
+      ],
+      "conductance_derivatives_dGdX": [
+        2.4175171320084805e-08,
+        2.2249192242287115e-08,
+        2.0323213164489425e-08
+      ]
+    },
+    "optimal_sensitivity": {
+      "optimal_field_X": -0.02,
+      "optimal_conductance_S": 4.874489123171033e-06,
+      "optimal_slope_dGdX": 2.4175171320084805e-08,
+      "shot_noise_sensitivity_V_per_A_per_sqrt_Hz": 0.0016348021006241775,
+      "thermal_sensitivity_V_per_A_per_sqrt_Hz": 0.011755125138507863,
+      "sensitivity_units": {
+        "shot_mV_cm_per_sqrt_Hz": 163480.21006241775,
+        "thermal_mV_cm_per_sqrt_Hz": 1175512.5138507863
+      }
+    }
+  },
+  "iv_characteristics": {
+    "bias_voltages": [
+      0.05,
+      0.075,
+      0.02,
+      0.05,
+      0.075,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "sw_system": {
+      "currents": [
+        3.148207240912097e-06,
+        4.206338079231743e-06,
+        1.0812811184117896e-06,
+        3.148207240912097e-06,
+        4.206338079231743e-06,
+        4.82840397442312e-06,
+        1.0186903333107376e-05,
+        1.239230096804352e-05,
+        2.3581283613133077e-05,
+        2.6334116228010125e-05
+      ],
+      "conductances": [
+        6.296414481824194e-05,
+        5.60845077230899e-05,
+        5.406405592058948e-05,
+        6.296414481824194e-05,
+        5.60845077230899e-05,
+        4.8284039744231195e-05,
+        4.07476133324295e-05,
+        2.478460193608704e-05,
+        3.1441711484177434e-05,
+        2.6334116228010125e-05
+      ],
+      "transmissions": [
+        0.6456867703019776,
+        0.6467052922392095,
+        0.6441877011762104,
+        0.6456867703019776,
+        0.6467052922392095,
+        0.6543073701987161,
+        0.8054771426375062,
+        0.8067798975533249,
+        0.8129321831859817,
+        0.8604713839133796
+      ]
+    },
+    "pristine_system": null
+  },
+  "iv_analysis": {
+    "linear_fit_slope_S": 2.550155171499912e-05,
+    "linear_fit_intercept_A": 1.992392645336916e-06,
+    "nonlinearity_factor": 0.1605895775060515,
+    "is_significantly_nonlinear": true
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "timestamp": "2025-10-10_21-15-57",
+    "script_version": "2.0_multi_bias",
+    "simulation_mode": "SCF+NEGF",
+    "smoke_test": true
+  },
+  "system_parameters": {
+    "width_W": 6.0,
+    "length_L": 8.0,
+    "fermi_energy_eV": -0.0018500000000000044,
+    "temperature_K": 300.0,
+    "hopping_t_eV": 2.7,
+    "magnetic_field": {
+      "Bx": 0.0,
+      "By": 0.0,
+      "Bz": 0.1
+    },
+    "gate_voltage_g": 3.939877
+  },
+  "sw_defect_parameters": {
+    "eps_sw": 0.04815,
+    "alpha1_sw": 0.01,
+    "alpha2_sw": -0.05,
+    "impurity_V_eta2": 0.671015,
+    "impurity_V_side": 0.2
+  },
+  "sw_system": {
+    "field_sweep": {
+      "fields_X": [
+        -0.02,
+        0.0,
+        0.02
+      ],
+      "conductances_S": [
+        60848336191264.586,
+        60854371773311.42,
+        60859445674086.97
+      ],
+      "transmissions": [
+        0.6398246778533438,
+        0.6398441471440365,
+        0.6398897644528991
+      ],
+      "conductance_derivatives_dGdX": [
+        301779102341.7969,
+        277737070559.5703,
+        253695038777.34375
+      ]
+    },
+    "optimal_sensitivity": {
+      "optimal_field_X": -0.02,
+      "optimal_conductance_S": 60848336191264.586,
+      "optimal_slope_dGdX": 301779102341.7969,
+      "shot_noise_sensitivity_V_per_A_per_sqrt_Hz": 4.627062716818358e-13,
+      "thermal_sensitivity_V_per_A_per_sqrt_Hz": 3.3271122687667753e-12,
+      "sensitivity_units": {
+        "shot_mV_cm_per_sqrt_Hz": 4.627062716818358e-05,
+        "thermal_mV_cm_per_sqrt_Hz": 0.0003327112268766775
+      }
+    }
+  }
+}
