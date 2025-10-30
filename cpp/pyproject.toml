@@ -1,0 +1,17 @@
+[build-system]
+requires = ["pybind11", "scikit-build-core"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "cpp_negf"
+version = "0.1.0"
+requires-python = ">=3.9"
+description = "C++ accelerated NEGF kernels for graphene transport"
+
+[tool.scikit-build]
+wheel.expand-macos-universal-tags = true
+build.verbose = true
+cmake.version = ">=3.15"
+
+[tool.cibuildwheel]
+build = "cp3*"
